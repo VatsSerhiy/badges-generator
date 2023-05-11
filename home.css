@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/A4dGoV.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 89vh;
+    position: relative;
+}
+
+.container {
+    background-color: #2f3136;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #b9bbbe;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+label[for="numberOfCertificate"] {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #40444b;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #72767d;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #634ded;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #624dedb5;
+}
+
+.home-body {
+    min-height: 90vh;
+  }
+
+  
+.canvas-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    height: 540px;
+    margin: 0px;
+    margin-top: 0px;
+    z-index: 0;
+  }
+  
+  .lower-canvas {
+    position: relative;
+    transform: translate(30%, 0%);
+    border: 1px solid black;
+    z-index: 0;
+  }
+
+
+  .find-button {
+    background-color: #634ded;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    top: 0;
+  }
+  
+  .button-text {
+    padding: 5px;
+  }
+  
+  .find-button img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 41, 41, 0.345);
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }

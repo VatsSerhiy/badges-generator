@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+  <title>Генератор бейджів</title>
+  <link rel="stylesheet" href="find.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.3.1/fabric.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</head>
+
+<body>
+  <div class="top-bar">
+    <button class="home-button" onclick="window.location.href='/'">Створити бейдж</button>
+  </div>
+  <div class="container">
+    <h1>Знайти бейдж</h1>
+    <div class="form-group">
+      <label for="numberOfBadge">Введіть номер, який знаходиться в лівому верхньому куті бейджа:</label>
+      <form method="GET" action="/findBadge">
+        <input type="text" id="numberOfBadge" name="numberOfBadge" required>
+        <button type="submit">Знайти</button>
+      </form>
+    </div>
+  </div>
+  <% if (item !=false) { %>
+    <% if (item===null) { %>
+      <h3 class="finding-error">Бейджу з таким номером не існує.</h3>
+      <% } else { %>
+        <div class="container2">
+          <span class="container-span-1">
+            <%= item.number %>
+          </span>
+          <span class="container-span-2">
+            <%= item.fullname %>
+          </span>
+          <span class="container-span-3">
+            <%= item.course %>
+          </span>
+          <span class="container-span-4">
+            <%= item.first_date.toLocaleDateString('en-US', { year: 'numeric' , month: 'long' , day: 'numeric' }) %>
+          </span>
+          <span class="container-span-5">
+            <%= item.last_date.toLocaleDateString('en-US', { year: 'numeric' , month: 'long' , day: 'numeric' }) %>
+          </span>
+        </div>
+        <% } %>
+          <% } %>
+            <footer>
+              <div>
+                <p>&copy; 2023 My Website. All rights reserved.</p>
+              </div>
+            </footer>
+</body>
+
+</html>
